@@ -18,7 +18,6 @@
 
 	<script>
 		const displayWindowSize = () => {
-			setStylesOnLoad(); // Вызываем функцию для пересчета стилей при изменении размера окна
 
 			const StartWindowHeight = window.innerHeight;
 			const windowWidth = window.innerWidth;
@@ -47,7 +46,6 @@
 			}
 		};
 
-		document.addEventListener("DOMContentLoaded", setStylesOnLoad);
 		window.addEventListener("resize", displayWindowSize);
 
 		// Инициализация функции отображения размера окна
@@ -667,7 +665,8 @@
 								<div class="delivery-form__subtitle"><span>В рабочии часы</span> менеджер перезванивает за 10-15 минут</div>
 								<div class="delivery-form__grid">
 									<fieldset class="delivery-form__group form-group">
-										<input type="text" placeholder="Объем, м3">
+										<input required="" type="text" placeholder="">
+										<div class="place_holder">Объем, м<sup>3</sup></div>
 									</fieldset>
 									<fieldset class="delivery-form__group form-group">
 										<select>
