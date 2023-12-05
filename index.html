@@ -14,43 +14,6 @@
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>Главная</title>
-
-	<script>
-		const displayWindowSize = () => {
-
-			const StartWindowHeight = window.innerHeight;
-			const windowWidth = window.innerWidth;
-			const windowHeight = window.innerHeight;
-
-			const ratio_default = 1.98;
-			const ratio_current = windowWidth / windowHeight;
-			const coef_ratio = (ratio_default / ratio_current).toFixed(2);
-			const coef_height = (Math.max(windowHeight / 775, 0.78)).toFixed(2);
-			const coef_width = (Math.min(coef_ratio * 1.07, 0.95)).toFixed(2);
-
-			if ((StartWindowHeight !== windowHeight) && (navigator.platform !== 'iPhone' && navigator.platform !== 'iPad')) {
-				document.body.classList.add("keyboard-on");
-			} else {
-				document.body.classList.remove("keyboard-on");
-			}
-
-			if (coef_ratio < 1) {
-				document.documentElement.style.setProperty('--coef_r', coef_ratio);
-			}
-			if (coef_height < 1) {
-				document.documentElement.style.setProperty('--coef_h', coef_height);
-			}
-			if (coef_width < 1) {
-				document.documentElement.style.setProperty('--coef_w', coef_width);
-			}
-		};
-
-		window.addEventListener("resize", displayWindowSize);
-
-		// Инициализация функции отображения размера окна
-		displayWindowSize();
-	</script>
-
 </head>
 
 
@@ -854,6 +817,41 @@
     ymaps.ready(init);
 
 </script>
+	<script>
+		const displayWindowSize = () => {
+
+			const StartWindowHeight = window.innerHeight;
+			const windowWidth = window.innerWidth;
+			const windowHeight = window.innerHeight;
+
+			const ratio_default = 1.98;
+			const ratio_current = windowWidth / windowHeight;
+			const coef_ratio = (ratio_default / ratio_current).toFixed(2);
+			const coef_height = (Math.max(windowHeight / 775, 0.78)).toFixed(2);
+			const coef_width = (Math.min(coef_ratio * 1.07, 0.95)).toFixed(2);
+
+			if ((StartWindowHeight !== windowHeight) && (navigator.platform !== 'iPhone' && navigator.platform !== 'iPad')) {
+				document.body.classList.add("keyboard-on");
+			} else {
+				document.body.classList.remove("keyboard-on");
+			}
+
+			if (coef_ratio < 1) {
+				document.documentElement.style.setProperty('--coef_r', coef_ratio);
+			}
+			if (coef_height < 1) {
+				document.documentElement.style.setProperty('--coef_h', coef_height);
+			}
+			if (coef_width < 1) {
+				document.documentElement.style.setProperty('--coef_w', coef_width);
+			}
+		};
+
+		window.addEventListener("resize", displayWindowSize);
+
+		// Инициализация функции отображения размера окна
+		displayWindowSize();
+	</script>
 
 </body>
 
