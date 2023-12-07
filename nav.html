@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<script src="https://degorov.ru/1base/wp-content/themes/Goodini/assets/js/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://degorov.ru/1base/wp-content/themes/Goodini/assets/css/base.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://degorov.ru/1base/wp-content/themes/Goodini/assets/css/blocks.css" />
+	<link rel="stylesheet" type="text/css" href="https://degorov.ru/1base/wp-content/themes/Goodini/assets/css/modules.css" />
+	<link rel="stylesheet" type="text/css" href="https://degorov.ru/1base/wp-content/themes/Goodini/assets/css/anim.css" />
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Навигация</title>
+</head>
+
+
+<body>
+	<div class="wrapper">
+
+		<div class="container-fluid">
+			<ul class="navigation-list">
+				<li><a href="index.html">Главная</a></li>
+				<li><a href="404.html">404</a></li>
+				<li><a href="gratitude.html">Благодарим за заявку</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<script src="https://degorov.ru/1base/wp-content/themes/Goodini/assets/js/base.min.js"></script>
+<script src="https://degorov.ru/1base/wp-content/themes/Goodini/assets/js/validate.min.js"></script>
+<script src="js/lazysizes.min.js"></script>
+<script src="js/main.min.js"></script>
+
+	<script type="text/javascript">
+
+    let center = [55.848630, 49.063654];
+
+    function init() {
+        let map = new ymaps.Map('map', {
+            center: center,
+            zoom: 15
+        });
+
+        let mapObjects = [
+            {
+                text: "г.Казань, ул. Тэцевская, 11",
+                cords: [55.848630, 49.063654]
+            },
+        ]
+
+        mapObjects.forEach(object => {
+            let placemark = new ymaps.Placemark(object.cords, {
+                balloonContent: `
+
+			<div class="balloon">
+				<div class="balloon__text">
+				    ${object.text}
+                </div>
+			</div>
+
+		`
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: "img/map-icon.svg",
+                iconImageSize: [45, 60],
+                // iconImageOffset: [-15, -44]
+            });
+
+            map.geoObjects.add(placemark);
+        })
+
+        map.controls.remove('geolocationControl'); // удаляем геолокацию
+        map.controls.remove('searchControl'); // удаляем поиск
+        map.controls.remove('trafficControl'); // удаляем контроль трафика
+        map.controls.remove('typeSelector'); // удаляем тип
+        map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+        map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+        map.controls.remove('rulerControl'); // удаляем контрол правил
+
+    }
+
+    ymaps.ready(init);
+
+</script>
+
+</body>
+
+</html>

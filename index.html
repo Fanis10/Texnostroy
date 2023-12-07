@@ -11,7 +11,6 @@
 	<link rel="stylesheet" type="text/css" href="https://degorov.ru/1base/wp-content/themes/Goodini/assets/css/modules.css" />
 	<link rel="stylesheet" type="text/css" href="https://degorov.ru/1base/wp-content/themes/Goodini/assets/css/anim.css" />
 	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=9133eb49-3a97-4b2d-90be-6b80a97a5036" type="text/javascript"></script>
-	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 	<title>Главная</title>
 </head>
@@ -104,6 +103,9 @@
 						</button>
 					</div>
 				</div>
+				<div class="main__img">
+					<img src="img/main-img.webp" alt="">
+				</div>
 			</section>
 			<section class="info">
 				<div class="container-fluid">
@@ -121,7 +123,7 @@
 							</div>
 						</div>
 						<div class="info__img right-animation _anim-items anim-no-hide">
-							<img src="img/infp-img.webp" alt="">
+							<img class="lazyload" data-src="img/infp-img.webp" alt="">
 						</div>
 					</div>
 				</div>
@@ -229,7 +231,7 @@
 									</div>
 								</div>
 								<div class="calculation-form__img right-animation _anim-items anim-no-hide">
-									<img src="img/calculation-img.webp" loading="lazy">
+									<img class="lazyload" data-src="img/calculation-img.webp">
 								</div>
 							</form>
 						</div>
@@ -255,7 +257,7 @@
 								<div data-content-path="1" class="catalog__content tabs__content tabs__content--active">
 									<div class="catalog__left left-animation _anim-items anim-no-hide">
 										<div class="catalog__img">
-											<img src="img/catalog-img.webp" loading="lazy" alt="">
+											<img class="lazyload" data-src="img/catalog-img.webp" alt="">
 										</div>
 										<div class="catalog__list">
 											<p><span>М-100</span> Товарный бетон В7,5 (гравий) </p>
@@ -277,7 +279,7 @@
 								<div data-content-path="2" class="catalog__content tabs__content">
 									<div class="catalog__left">
 										<div class="catalog__img">
-											<img src="img/catalog-img2.webp" loading="lazy" alt="">
+											<img class="lazyload" data-src="img/catalog-img2.webp" alt="">
 										</div>
 										<div class="catalog__list">
 											<p><span>М-100</span> Товарный бетон В7,5 (гравий) </p>
@@ -299,7 +301,7 @@
 								<div data-content-path="3" class="catalog__content tabs__content">
 									<div class="catalog__left">
 										<div class="catalog__img">
-											<img src="img/catalog-img3.webp" loading="lazy" alt="">
+											<img class="lazyload" data-src="img/catalog-img3.webp" alt="">
 										</div>
 										<div class="catalog__list">
 											<p><span>М-100</span> Товарный бетон В7,5 (гравий) </p>
@@ -321,7 +323,7 @@
 								<div data-content-path="4" class="catalog__content tabs__content">
 									<div class="catalog__left">
 										<div class="catalog__img">
-											<img src="img/catalog-img4.webp" loading="lazy" alt="">
+											<img class="lazyload" data-src="img/catalog-img4.webp" alt="">
 										</div>
 										<div class="catalog__list">
 											<p><span>М-100</span> Товарный бетон В7,5 (гравий) </p>
@@ -355,37 +357,37 @@
 							<div class="products__slider-wrapper">
 								<div class="product-card">
 									<div class="product-card__img">
-										<img src="img/products-img.webp" loading="lazy" alt="">
+										<img class="lazyload" data-src="img/products-img.webp" alt="">
 									</div>
 									<div class="product-card__text">Фундамент дома</div>
 								</div>
 								<div class="product-card">
 									<div class="product-card__img">
-										<img src="img/products-img2.webp" loading="lazy" alt="">
+										<img class="lazyload" data-src="img/products-img2.webp" alt="">
 									</div>
 									<div class="product-card__text">Стяжка пола</div>
 								</div>
 								<div class="product-card">
 									<div class="product-card__img">
-										<img src="img/products-img3.webp" loading="lazy" alt="">
+										<img class="lazyload" data-src="img/products-img3.webp" alt="">
 									</div>
 									<div class="product-card__text">Монтаж плит перекрытия</div>
 								</div>
 								<div class="product-card">
 									<div class="product-card__img">
-										<img src="img/products-img4.webp" loading="lazy" alt="">
+										<img class="lazyload" data-src="img/products-img4.webp" alt="">
 									</div>
 									<div class="product-card__text">Установка забора</div>
 								</div>
 								<div class="product-card">
 									<div class="product-card__img">
-										<img src="img/products-img5.webp" loading="lazy" alt="">
+										<img class="lazyload" data-src="img/products-img5.webp" alt="">
 									</div>
 									<div class="product-card__text">Отмостка</div>
 								</div>
 								<div class="product-card">
 									<div class="product-card__img">
-										<img src="img/products-img6.webp" loading="lazy" alt="">
+										<img class="lazyload" data-src="img/products-img6.webp" alt="">
 									</div>
 									<div class="product-card__text">Другая задача</div>
 								</div>
@@ -415,7 +417,7 @@
 									</p>
 								</div>
 								<div class="transport-card__img right-animation _anim-items anim-no-hide">
-									<img src="img/transport-img.webp" loading="lazy" alt="">
+									<img class="lazyload" data-src="img/transport-img.webp" alt="">
 								</div>
 							</div>
 							<div class="transport-card">
@@ -427,7 +429,7 @@
 									</p>
 								</div>
 								<div class="transport-card__img right-animation _anim-items anim-no-hide">
-									<img src="img/transport-img2.webp" loading="lazy" alt="">
+									<img class="lazyload" data-src="img/transport-img2.webp" alt="">
 								</div>
 							</div>
 						</div>
@@ -450,7 +452,7 @@
 								<h2>Коротко о заводе <br> ПК “Технострой”</h2>
 								<div class="about-card__wrap">
 									<div class="about-card__img">
-										<img src="img/about-img.webp" loading="lazy" alt="">
+										<img class="lazyload" data-src="img/about-img.webp" alt="">
 									</div>
 									<div class="about-card__desc">
 										<div class="about-card__title">250 кубов бетона в час производственная мощность</div>
@@ -461,7 +463,7 @@
 							<div class="about-card right-animation _anim-items anim-no-hide">
 								<div class="about-card__wrap">
 									<div class="about-card__img">
-										<img src="img/about-img2.webp" loading="lazy" alt="">
+										<img class="lazyload" data-src="img/about-img2.webp" alt="">
 									</div>
 									<div class="about-card__desc">
 										<div class="about-card__title">3 растворобетонных узла на предприятии</div>
@@ -472,7 +474,7 @@
 							<div class="about-card right-animation _anim-items anim-no-hide">
 								<div class="about-card__wrap">
 									<div class="about-card__img">
-										<img src="img/about-img3.webp" loading="lazy" alt="">
+										<img class="lazyload" data-src="img/about-img3.webp" alt="">
 									</div>
 									<div class="about-card__desc">
 										<div class="about-card__title">Аккредитованная лаборатория</div>
@@ -495,7 +497,7 @@
 							<div class="warning__info right-animation _anim-items anim-no-hide">
 								<div class="warning__info-wrap">
 									<i>
-										<img src="img/warning-icon.svg" loading="lazy" alt="">
+										<img class="lazyload" data-src="img/warning-icon.svg" alt="">
 									</i>
 									<span>3 ваших риска при заказе очень дешевого бетона от мошенника</span>
 								</div>
@@ -513,7 +515,7 @@
 							</div>
 							<div class="warning-card left-animation _anim-items anim-no-hide">
 								<div class="warning-card__img">
-									<img src="img/warning-img2.webp" loading="lazy" alt="">
+									<img class="lazyload" data-src="img/warning-img2.webp" alt="">
 								</div>
 								<div class="warning-card__desc">
 									<div class="warning-card__title">Прочность <br> ниже заявленной</div>
@@ -522,7 +524,7 @@
 							</div>
 							<div class="warning-card left-animation _anim-items anim-no-hide">
 								<div class="warning-card__img">
-									<img src="img/warning-img3.webp" loading="lazy" alt="">
+									<img class="lazyload" data-src="img/warning-img3.webp" alt="">
 								</div>
 								<div class="warning-card__desc">
 									<div class="warning-card__title">Предоплата переведена, <br> а бетона нет</div>
@@ -543,10 +545,10 @@
 							</div>
 							<div class="contacts__images">
 								<div class="contacts__img left-animation _anim-items anim-no-hide">
-									<img src="img/contacts-img.webp" loading="lazy" alt="">
+									<img class="lazyload" data-src="img/contacts-img.webp" alt="">
 								</div>
 								<div class="contacts__img right-animation _anim-items anim-no-hide">
-									<img src="img/contacts-img.webp" loading="lazy" alt="">
+									<img class="lazyload" data-src="img/contacts-img.webp" alt="">
 								</div>
 							</div>
 							<div class="contacts__group text-animation _anim-items anim-no-hide">
@@ -585,25 +587,25 @@
 						<div class="documentation__slider text-animation _anim-items anim-no-hide">
 							<div class="documentation__slider-wrapper">
 								<a href="img/documentation-img.webp" class="documentation-card" data-fancybox="gallery">
-									<img src="img/documentation-img.webp" loading="lazy" alt="">
+									<img class="lazyload" data-src="img/documentation-img.webp" alt="">
 								</a>
 								<a href="img/documentation-img.webp" class="documentation-card" data-fancybox="gallery">
-									<img src="img/documentation-img.webp" loading="lazy" alt="">
+									<img class="lazyload" data-src="img/documentation-img.webp" alt="">
 								</a>
 								<a href="img/documentation-img.webp" class="documentation-card" data-fancybox="gallery">
-									<img src="img/documentation-img.webp" loading="lazy" alt="">
+									<img class="lazyload" data-src="img/documentation-img.webp" alt="">
 								</a>
 								<a href="img/documentation-img.webp" class="documentation-card" data-fancybox="gallery">
-									<img src="img/documentation-img.webp" loading="lazy" alt="">
+									<img class="lazyload" data-src="img/documentation-img.webp" alt="">
 								</a>
 								<a href="img/documentation-img.webp" class="documentation-card" data-fancybox="gallery">
-									<img src="img/documentation-img.webp" loading="lazy" alt="">
+									<img class="lazyload" data-src="img/documentation-img.webp" alt="">
 								</a>
 								<a href="img/documentation-img.webp" class="documentation-card" data-fancybox="gallery">
-									<img src="img/documentation-img.webp" loading="lazy" alt="">
+									<img class="lazyload" data-src="img/documentation-img.webp" alt="">
 								</a>
 								<a href="img/documentation-img.webp" class="documentation-card" data-fancybox="gallery">
-									<img src="img/documentation-img.webp" loading="lazy" alt="">
+									<img class="lazyload" data-src="img/documentation-img.webp" alt="">
 								</a>
 							</div>
 						</div>
@@ -668,10 +670,10 @@
 					</div>
 				</div>
 				<div class="delivery__img">
-					<img src="img/delivery-img.webp" loading="lazy" alt="">
+					<img class="lazyload" data-src="img/delivery-img.webp" alt="">
 				</div>
 				<div class="delivery__img2">
-					<img src="img/delivery-img2.webp" loading="lazy" alt="">
+					<img class="lazyload" data-src="img/delivery-img2.webp" alt="">
 				</div>
 			</section>
 		</main>
@@ -763,7 +765,7 @@
 
 	<script src="https://degorov.ru/1base/wp-content/themes/Goodini/assets/js/base.min.js"></script>
 <script src="https://degorov.ru/1base/wp-content/themes/Goodini/assets/js/validate.min.js"></script>
-<script src="js/libs.min.js"></script>
+<script src="js/lazysizes.min.js"></script>
 <script src="js/main.min.js"></script>
 
 	<script type="text/javascript">
